@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <h1>Airline: <%= @airline.name %></h1>
+        <% @tickets_for_airline.each do |ticket| %>
+            <h2>Departure City: <%= ticket.departure_city %></h2>
+            <h2>Destination City: <%= ticket.destination_city%></h2>
+        <% end %>
+        <form method="POST" action="/basura/<%= @airline.id %>">
+            <input type="submit" value="Delete" />
+        </form>
+    </body>
+</html>

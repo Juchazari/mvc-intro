@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Leonie's Airport</title>
+    </head>
+    <body>
+        <% @airlines.each do |airline| %>
+            <a href="/single_airline/<%= airline.id %>"><%= airline.name %></a><br>
+        <% end %>
+    </body>
+</html>
