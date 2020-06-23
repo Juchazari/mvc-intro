@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
     end
 
     post('/basura/:id') do 
-        remove_airline = Airline.find(params[:i$d])
+        remove_airline = Airline.find(params[:id])
         remove_airline.destroy()
     end
 
